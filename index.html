@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Your Mind">
+    <meta name="keywords" content="Portofolio Github Pages">
+    <meta name="author" content="Maenotak">
+    <title>Maenotak - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, main, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding-top: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maenotak</h1>
+        <p>Explore Your Mind, Exploring Your Ideas and Share Your Knowledges</p>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="navigate('home')">Home</a></li>
+                <li><a href="#about" onclick="navigate('about')">Me</a></li>
+                <li><a href="#contact" onclick="navigate('contact')">Contact</a></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/tntcollects/index.html">Tips & Tricks</a></li>
+                <li><a href="/bookmark-list/index.html">Bookmark List</a></li>
+                <li><a href="/projects/index.html">Projects</a></li>
+                <li><a href="/gallery/index.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="content-section">
+            <h2>Welcome to Maenotak Site</h2>
+            <p>This is the home page where you can find the latest updates and featured content.</p>
+        </section>
+        <section id="about" class="content-section hidden">
+            <h2>About Me</h2>
+            <p>Hello! I'm Maenotak, I'm an individual who is easily obsessed by something that suddenly comes to mind and then explores and plays with it. I am also very enthusiastic about learning and exploring something that interests me and is enthusiastic, especially if it is something new in my life. a passionate individual who loves to explore and share knowledge. This site is my platform to connect with like-minded people and share what I've learned.</p>
+            <p>Email: maen.otak37@gmail.com</p>
+            <p>Phone: +62 89626772288</p>
+        </section>
+        <section id="contact" class="content-section hidden">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maenotak. All rights reserved.</p>
+    </footer>
+    <script>
+        function navigate(section) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.add('hidden'));
+            document.getElementById(section).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
