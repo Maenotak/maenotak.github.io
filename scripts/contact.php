@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
     
-    $to = "your-email@example.com"; // Ganti dengan email Anda
+    $to = "maen.otak37@gmail.com"; // Ganti dengan email Anda
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     $headers = "From: $email";
