@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Maenotak">
+    <meta name="keywords" content="Projects, Maenotak">
+    <meta name="author" content="Maenotak">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, main, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding-top: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+        <p>Explore my projects</p>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#about" onclick="navigate('about')">Me</a></li>
+                <li><a href="/index.html#contact" onclick="navigate('contact')">Contact</a></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/tntcollects/index.html">Tips & Tricks</a></li>
+                <li><a href="/bookmark-list/index.html">Bookmark List</a></li>
+                <li><a href="/projects/index.html">Projects</a></li>
+                <li><a href="/gallery/index.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>My Projects</h2>
+        <p>Stay tuned for the latest projects.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maenotak. All rights reserved.</p>
+    </footer>
+    <script>
+        function navigate(section) {
+            window.location.href = `/index.html#${section}`;
+        }
+    </script>
+</body>
+</html>
