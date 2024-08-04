@@ -1,0 +1,63 @@
+title: Maenotak
+email: maen.otak37@gmail.com
+description: >-
+  A personal site for documentation when exploring something or things that come to mind
+baseurl: ""
+url: "https://maenotak.github.io"
+twitter_username: Maenotak
+github_username: Maenotak
+facebook_username: Maenotak
+Telegram_username: Maenotak
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+author:
+  name: Maenotak
+  avatar: "/assets/images/avatar.png"
+  bio: "Do Whatever You Like, Be Like What You Want.."
+  location: "Indonesia"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Maenotak"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/Maenotak"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/Maenotak"
+    - label: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://facebook.com/Maenotak"
+    - label: "Telegram"
+      icon: "fab fa-telegram"
+      url: "https://telegram.com/Maenotak"
+header_pages:
+  - _pages/me.md
+  - _pages/blog.md
+  - _pages/portfolio.md
+  - _pages/gallery.md
+  - _pages/projects.md
+  - _pages/tntcollects.md
+
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: /page:num/
+
+markdown: kramdown
+highlighter: rouge
+
+social_media:
+  - title: "GitHub"
+    url: "https://github.com/Maenotak"
+    icon: "fab fa-github"
+  - title: "Twitter"
+    url: "https://twitter.com/Maenotak"
+    icon: "fab fa-twitter"
+  - title: "LinkedIn"
+    url: "https://linkedin.com/in/Maenotak"
+    icon: "fab fa-linkedin"
